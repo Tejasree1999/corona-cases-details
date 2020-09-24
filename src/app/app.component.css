@@ -1,0 +1,22 @@
+.conatiner{
+    margin-top: 20px;
+}
+
+.row2
+{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    /*#svg{
+        width:50%;
+    }
+    #box1,#box2{
+        width:50%;
+        height:50%;
+        margin-left: 0;
+    }*/
+    .chart-wrapper baseChart{
+        height: 600px;
+    }
+}

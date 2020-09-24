@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>StateWise details...</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="container">
+        <thead>
+          <tr>
+            <th><h1>State/Union Territory</h1></th>
+            <th><h1>Total</h1></th>
+            <th><h1>Active</h1></th>
+            <th><h1>Recovered</h1></th>
+            <th><h1>Deaths</h1></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let state of stateName;let i=index">
+            <td>{{stateName[i]}}</td>
+            <td>{{totalCases[i]}}</td>
+            <td>{{activeCases[i]}}</td>
+            <td>{{recoveredCases[i]}}</td>
+            <td>{{deathCases[i]}}</td>
+          
+          </tr>
+        </tbody>
+      </table>      
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+canvas{
+    color:green;
+}
+
+
+.row1 h3{
+    color: indigo;
+    font-weight: 600;
+}
+
+.row2 h3{
+    color:red;
+}
+.row3 h3{
+    color:green;
+}
+.row4 h3{
+    color:maroon;
+}
+
+@media only screen and (max-width: 600px) {
+    .dead{
+        margin-top:10px;
+    }
+}

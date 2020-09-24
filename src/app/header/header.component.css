@@ -1,0 +1,31 @@
+/*.container-fluid{
+    position: fixed;
+    top:0;
+}*/
+
+nav {
+    /*background-color:paleturquoise;*/
+    background-color: lightyellow;
+    
+}
+nav a{
+    font-size: 20px;
+    color:maroon;
+    font-weight: 700;
+}
+li a{
+     border-radius: 20px;
+}
+li a:active{
+    background-color: peru;
+}
+li a:hover{
+    background-color: peru;
+}
+
+
+@media only screen and (max-width:600px){
+    li a,.navbar-header{
+        font-size: 15px;
+    }
+}

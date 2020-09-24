@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <form (ngSubmit)='onSubmit()' #form="ngForm">
+                <div class="form-group">
+                    <label for="state">Select state</label>
+                    <select id="state" 
+                    class="form-control"
+                    name="state"
+                    required
+                    ngModel>
+                        <option *ngFor="let state of states" [value]="state">{{state}}</option>
+                    </select>
+                </div>
+                <button class="btn btn-success" type="submit"><i class="fa fa-search"></i>Enter</button>
+            </form>                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>District</th>
+                        <th>Total</th>
+                        <th>Active</th>
+                        <th>Recovered</th>
+                        <th>Deaths</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let district of districts;let i='index'">
+                        <td class="name">{{districts[i]}}</td>
+                        <td>{{totald[i]}}</td>
+                        <td>{{actived[i]}}</td>
+                        <td>{{recoveredd[i]}}</td>
+                        <td>{{deathsd[i]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
+                    <h2>{{stateName}}</h2>
+                    <img src="{{img}}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div class="details">
+                        <div class="total dis">Total:{{stateTotal}}</div>
+                        <div class='active dis'>Active:{{stateActive}}</div>
+                        <div class="rec dis">Recovered:{{stateRecovered}}</div>
+                        <div class="deaths dis">Deaths:{{stateDeaths}}</div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
